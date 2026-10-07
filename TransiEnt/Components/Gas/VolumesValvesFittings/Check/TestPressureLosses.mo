@@ -37,7 +37,7 @@ model TestPressureLosses
     m_flow_nom=25,
     Delta_p_nom(displayUnit="bar") = 162123,
     p_start={16.6991,16.0588,15.3918}*1e5,
-    T_start(displayUnit="K"),
+    T_start(each displayUnit="K"),
     length=10e3,
     diameter_i=0.5,
     N_cv=3) annotation (Placement(transformation(extent={{-14,56},{14,64}})));
@@ -60,7 +60,7 @@ model TestPressureLosses
     m_flow_nom=25,
     Delta_p_nom(displayUnit="bar") = 162123,
     p_start={16.6991,16.0588,15.3918}*1e5,
-    T_start(displayUnit="K"),
+    T_start(each displayUnit="K"),
     length=10e3,
     diameter_i=0.5,
     N_cv=3) annotation (Placement(transformation(extent={{-14,6},{14,14}})));
@@ -76,7 +76,7 @@ model TestPressureLosses
     m_flow_nom=25,
     Delta_p_nom(displayUnit="bar") = 162123,
     p_start={16.6991,16.0588,15.3918}*1e5,
-    T_start(displayUnit="K"),
+    T_start(each displayUnit="K"),
     length=10e3,
     diameter_i=0.5,
     N_cv=3) annotation (Placement(transformation(extent={{-14,-46},{14,-38}})));

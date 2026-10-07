@@ -24,10 +24,10 @@ openModel(repopath + "/TransiEnt/package.mo");
 //
 Modelica.Utilities.System.setEnvironmentVariable("workingdir", resultpath);
 Modelica.Utilities.System.setEnvironmentVariable("startupscript", repopath + "/loadTransiEnt.mos");
-Modelica.Utilities.System.setEnvironmentVariable("public-data", repopath + "/TransiEnt/Tables/");
-Modelica.Utilities.System.setEnvironmentVariable("private-data", repopath + "/TransiEnt/Tables/");
-Modelica.Utilities.System.setEnvironmentVariable("superstructure-tables", repopath+"/TransiEnt/Tables/superstructure/Tables/");
-Modelica.Utilities.System.setEnvironmentVariable("superstructure-input", repopath+"/TransiEnt/Tables/superstructure/RegionInformation/")
+Modelica.Utilities.System.setEnvironmentVariable("publicData", repopath + "/TransiEnt/Tables/");
+Modelica.Utilities.System.setEnvironmentVariable("privateData", repopath + "/TransiEnt/Tables/");
+Modelica.Utilities.System.setEnvironmentVariable("superstructureTables", repopath+"/TransiEnt/Tables/superstructure/Tables/");
+Modelica.Utilities.System.setEnvironmentVariable("superstructureInput", repopath+"/TransiEnt/Tables/superstructure/RegionInformation/")
 
 // ==== Change working directory:
 //

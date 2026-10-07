@@ -46,7 +46,7 @@ model Consumer_SLP "Simple model of a thermal consumer with a table-based heat f
  parameter SI.SpecificHeatCapacity cp=4186;
  parameter Boolean useInput=false;
  parameter String relativepath="/heat/HeatLoad.txt";
- final parameter String path = TransiEnt.Basics.Functions.fullPathName(               Modelica.Utilities.System.getEnvironmentVariable("public-data") + relativepath);
+ final parameter String path = TransiEnt.Basics.Functions.fullPathName(               Modelica.Utilities.System.getEnvironmentVariable("publicData") + relativepath);
 
   // _____________________________________________
   //

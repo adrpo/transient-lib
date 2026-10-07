@@ -37,13 +37,6 @@ function getRealGasGCV_xM "Adaptive function for gross calorific value calculati
 
   // _____________________________________________
   //
-  //        Constants and Hidden Parameters
-  // _____________________________________________
-
-  parameter Real[realGasType.nc] GCVm_vec=getRealGasGCVmVector(                                         realGasType,realGasType.nc);
-
-  // _____________________________________________
-  //
   //             Variable Declarations
   // _____________________________________________
 
@@ -55,6 +48,12 @@ public
   output SI.SpecificEnthalpy GCVOut "Returned GCV";
 
 protected
+  // _____________________________________________
+  //
+  //        Constants and Hidden Parameters
+  // _____________________________________________
+
+  parameter Real[realGasType.nc] GCVm_vec=getRealGasGCVmVector(                                         realGasType,realGasType.nc);
   SI.MoleFraction[realGasType.nc] x=cat(1,x_in,{1-sum(x_in)}) "Molar composition of components";
 
 algorithm
@@ -68,7 +67,7 @@ algorithm
     GCVOut:=GCVIn;
   else
     //Search for component in GCVComponentValues and add it to total GCV weighted by mole fraction
-    GCVOut:=sum(x*GCVm_vec);
+    GCVOut:=x*GCVm_vec;
   end if;
 
   annotation (Documentation(info="<html>

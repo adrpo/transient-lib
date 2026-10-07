@@ -43,6 +43,7 @@ function DroopSelector "This function can be used to conveniently select a droop
   input Real param;
   output Real droop;
 
+protected
   // _____________________________________________
   //
   //                  Constants

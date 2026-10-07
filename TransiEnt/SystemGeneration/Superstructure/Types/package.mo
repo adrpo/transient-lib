@@ -21,6 +21,6 @@ package Types
 // and                                                                            //
 // XRG Simulation GmbH (Hamburg, Germany).                                        //
 //________________________________________________________________________________//
-  constant String SUPERSTRUCTURE_TABLES="superstructure-tables";
-  constant String SUPERSTRUCTURE_INPUT="superstructure-input";
+  constant String SUPERSTRUCTURE_TABLES="superstructureTables";
+  constant String SUPERSTRUCTURE_INPUT="superstructureInput";
 end Types;
